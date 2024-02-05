@@ -83,10 +83,24 @@
     ```
    ![image](https://github.com/Nandana2508/Bigquery/assets/158820596/a4777d80-4c1a-4dbb-af2f-fac6d14d479f)
 
-  9. List all trees with a status of "salt and Drought Tolerant" or "Drought and pollution tolerant"
+  9. List the tree id and their stump_id 
 
       ```SQL
+      SELECT tree_id,stump_diam
+      FROM `bigquery-public-data.new_york_trees.tree_census_2015`
+      WHERE stump_diam = 10;
+      ```
+      <img width="487" alt="image" src="https://github.com/Nandana2508/Bigquery/assets/158820596/dcde13c4-8a72-4162-8248-6955c877bd2c">
+
+  10. list the tree_id and their address
       
+      ```SQL 
+      SELECT tree_id, address
+      FROM `bigquery-public-data.new_york_trees.tree_census_2015`
+      WHERE address = "192 EAST 164 STREET";
+      ```
+      <img width="404" alt="image" src="https://github.com/Nandana2508/Bigquery/assets/158820596/39522f3c-6c98-479c-8382-84f6b3b31114">
+
       
 
 
